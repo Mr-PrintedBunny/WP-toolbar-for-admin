@@ -1,6 +1,6 @@
 <?php
 /**
-  Plugin Name: hides the admin toolbar from non-admins
+  Plugin Name: Hides the admin toolbar from non-admins
   Description: Hide amdin toolbar if role "no admin"
   Author: Mr.PrintedBunny
   Version: 1.0
