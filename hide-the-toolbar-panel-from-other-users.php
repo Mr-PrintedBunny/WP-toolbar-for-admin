@@ -1,6 +1,6 @@
 <?php
 /**
-  Plugin Name: Hide the admin toolbar from other users
+  Plugin Name: hides the admin toolbar from non-admins
   Description: Hide amdin toolbar if role "no admin"
   Author: Mr.PrintedBunny
   Version: 1.0
@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
   die;
 }
 
- function htatfou_hide_admin_bar() {
+ function htatfna_hide_admin_bar() {
   if (current_user_can('administrator')) {
     add_filter('show_admin_bar', '__return_true');
  } 
@@ -21,6 +21,4 @@ if (!defined('ABSPATH')) {
     add_filter('show_admin_bar', '__return_false');
   }
 }
- add_action('after_setup_theme', 'htatfou_hide_admin_bar');
-
-?>
+ add_action('after_setup_theme', 'htatfna_hide_admin_bar');
